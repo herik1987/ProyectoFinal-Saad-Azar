@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Moon+Dance&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {background: url(../assets/img/32127-marrones.jpg);
+    position: relative;
+    padding-bottom: 4rem;
+    min-height: 100vh;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+header {
+    background-color: #0000007d;
+}
+
+.bar a {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 5rem;   
+    font-weight: 300;
+    color: #f1ecec;
+    text-decoration: none;
+    margin-left: 1.25rem;
+}
+
+nav {
+    text-align: right;
+    background-color: #00000009;
+}
+
+.menu li {
+    margin-inline: 0.6rem;
+    font-size: 1.5rem;
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #f1ecec;
+    font-family: 'Moon Dance', cursive;
+    font-size: 2rem;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+ /* TARJETAS */
+ 
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetasindex1 {
+    margin-right: 30rem;
+    text-align: center;
+}
+
+.tarjetasindex2 {
+    margin-left: 30rem;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+
+/*UBICACION*/
+
+.mapa {
+    color: #f1ecec;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+
+/*REDES SOCIALES*/
+
+.footerindex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #0000007d;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footericon {
+    flex-direction: row;
+    width: 3rem;
+    margin-inline: 2rem;
+    
+}
+
+.copyright {
+    font-family: 'Moon Dance', cursive;
+    color: #f1ecec;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+
+/* FORM CONTACTO y PEDIDOS ONLINE */
+
+form {
+    color: #f1ecec;
+    margin: 7rem 0 0 14rem;
+    width: 50rem;
+    height: 40rem;
+    padding: 1em;
+    border: 1rem solid #f1ebeb35;
+    border-radius: 1em;
+}
+
+label {
+    margin-left: 4.5rem;
+}
+
+textarea {
+    margin: 30px 80px 0 120px;
+}
+
+input.boton {
+    margin: 20px 0 0 200px;
+    color: #000000;
+}
+
+/*CARTA*/
+
+main {
+    color: #f1ecec;
+    margin: 1rem;
+}
+
+.pagecarta {
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.grid-carta {
+    border: 5px solid #906603;
+    border-radius: 1rem;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.grid-cafeteria {
+    grid-template-rows: repeat(19, 1fr);
+}
+
+.grid-cocina {
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-bebidas {
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.cartacontacto {
+    margin-top: 4rem;
+    color: #5f9ea0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.linklink {
+    color: aqua;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+/*PROVEEDORES*/
+
+.provee {
+    color: #c9b6b6;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Moon Dance', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: 60%;
+    max-height: 40rem;
+}
+
+.carousel-inner {
+    height: 40rem;
+}
+
+.d-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+
+/*SUCURSALES*/
+
+.sucursales {
+    color: #f1ecec;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 70rem;
+    margin: 2rem;
+    padding: 2rem;
+    text-indent: 20px;
+}
+
+.sucursales__lista {
+    font-size: 3rem;
+    margin-top: 7rem;
+    color: #5f9ea0;
+    text-align: left;
+    text-decoration: double underline;
+}
+
+/*PEDIDOS ONLINE*/
+
+.textoenvio {
+    color: #f1ecec;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*OFERTA LABORAL*/
+
+.quienesintro {
+    font-size: 3rem;
+    font-style: italic;
+    color: #c9b6b6;
+    text-align: center;
+}
+
+.quienesintro2 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-decoration: underline;
+}
+
+.quien {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.quienescontacto {
+    font-size: 2rem;
+    margin-top: 7rem;
+    border: 1rem solid #5f9ea0;
+    padding: 0.5rem;
+}
+
+/*EL ORIGEN*/
+
+.origen {
+    display: flex;
+    font-size: 1.5rem;
+    width: 70rem;
+    text-indent: 20px;
+    align-items: center;
+}
+
+.origenimg {
+    max-width: 300px;
+    margin-left: 2rem;
+}
+
+.origen2 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 70rem;
+    margin-top: 2rem;
+    text-indent: 20px;
+    align-items: center;
+}
+
+.origenimg2 {
+    max-width: 300px;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.origen3 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 70rem;
+    text-indent: 20px;
+    align-items: center;
+}
+
+.origenimg3 {
+    max-width: 300px;
+}
+
+.origen4 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 70rem;
+    margin-top: 2rem;
+    text-indent: 20px;
+    align-items: center;
+}
+
+.origenimg4 {
+    max-width: 300px;
+    padding: 2rem;
+}
+
+.origen5 {
+    font-size: 3rem;
+    font-style: italic;
+    text-indent: 40px;
+}
+
+.origenimg5 {
+    max-width: 500px;
+    margin-left: 20rem;
+}
+
+
+/*Mediaqueries*/
+
+@media screen and (max-width: 768px) {
+
+    .bar {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2.1rem;
+    }
+
+    .footericon {
+        width: 1.5rem;
+        margin-inline: 0.5rem;
+    }
+
+    .copyright {
+        font-family: 'Moon Dance', cursive;
+        color: #f1ecec;
+        font-size: 1rem;
+        margin-left: 1rem;
+
+    }
+
+    .d-block {
+        margin-left: 3rem;
+    }
+}
