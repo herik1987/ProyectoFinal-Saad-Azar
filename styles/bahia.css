@@ -166,6 +166,8 @@ main {
 
 /*PROVEEDORES*/
 
+/*PROVEEDORES*/
+
 .provee {
     color: #c9b6b6;
     margin: 1rem;
@@ -175,20 +177,43 @@ main {
     text-align: center;
 }
 
-.carousel-inner img {
-    width: 60%;
-    max-height: 40rem;
+.bimbo {
+    max-width: 70%;
+    margin-left: 11rem;
 }
 
-.carousel-inner {
-    height: 40rem;
+.coca {
+    max-width: 60%;
+    margin-left: 15rem;
 }
 
-.d-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hileret {
+    width: 20rem;
+    margin: 2rem 0 1rem 29rem;
+}
+.serenisima {
+    max-width: 80%;
     margin-left: 7rem;
+}
+
+.virginia {
+    width: 50rem;
+    margin-left: 13rem;
+}
+
+.lario {
+    width: 20rem;
+    margin-left: 28rem;
+}
+
+.palau {
+    width: 20rem;
+    margin-left: 28rem;
+}
+
+.pepsi {
+    max-width: 40%;
+    margin-left: 22rem;
 }
 
 
