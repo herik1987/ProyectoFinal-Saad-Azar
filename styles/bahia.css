@@ -114,32 +114,6 @@ nav {
     margin-left: 2rem;
 }
 
-
-/* FORM CONTACTO y PEDIDOS ONLINE */
-
-form {
-    color: #f1ecec;
-    margin: 7rem 0 0 14rem;
-    width: 50rem;
-    height: 40rem;
-    padding: 1em;
-    border: 1rem solid #f1ebeb35;
-    border-radius: 1em;
-}
-
-label {
-    margin-left: 4.5rem;
-}
-
-textarea {
-    margin: 30px 80px 0 120px;
-}
-
-input.boton {
-    margin: 20px 0 0 200px;
-    color: #000000;
-}
-
 /*CARTA*/
 
 main {
