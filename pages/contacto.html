@@ -31,14 +31,23 @@
 <!--FORMULARIO DE CONTACTO-->
 
     <main>
-        <div class="mb-3">
+        <div class="row">
+            <div class="col-auto">
+              <input type="name" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+          </div>
+        <div class="mb-3 col-sm-4">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
           </div>
-          <div class="mb-3">
+          <div class="mb-3 col-sm-7">
             <label for="exampleFormControlTextarea1" class="form-label">introduzca aqui su consulta</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
           </div> 
+          <button type="submit" class="btn btn-secondary mb-3">Enviar</button>
     </main>
 
 
