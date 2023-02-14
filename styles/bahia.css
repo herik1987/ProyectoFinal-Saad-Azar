@@ -164,7 +164,6 @@ main {
     justify-content: center;
 }
 
-/*PROVEEDORES*/
 
 /*PROVEEDORES*/
 
@@ -237,6 +236,7 @@ main {
     text-decoration: double underline;
 }
 
+
 /*PEDIDOS ONLINE*/
 
 .textoenvio {
@@ -245,6 +245,7 @@ main {
     text-align: center;
     margin-top: 2rem;
 }
+
 
 /*OFERTA LABORAL*/
 
@@ -273,6 +274,7 @@ main {
     border: 1rem solid #5f9ea0;
     padding: 0.5rem;
 }
+
 
 /*EL ORIGEN*/
 
@@ -346,31 +348,110 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    .bar {
-        text-align: center;
-    }
 
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 2.1rem;
-    }
+    /*HEADER*/
 
-    .footericon {
-        width: 1.5rem;
-        margin-inline: 0.5rem;
-    }
+.bar {
+    text-align: center;
+}
 
-    .copyright {
-        font-family: 'Moon Dance', cursive;
-        color: #f1ecec;
-        font-size: 1rem;
-        margin-left: 1rem;
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.1rem;
+}
 
-    }
 
-    .d-block {
-        margin-left: 3rem;
-    }
+    /*PROVEEDORES*/
+
+.bimbo {
+    max-width: 70%;
+    margin-left: 3rem;
+}
+
+.coca {
+    max-width: 60%;
+    margin-left: 4rem;
+    padding-top: 1rem;
+}
+
+.hileret {
+    width: 20rem;
+    margin: 2rem 0 1rem 1rem;
+}
+.serenisima {
+    max-width: 80%;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.virginia {
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+.lario {
+    width: 20rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.palau {
+    width: 15rem;
+    margin-left: 3rem;
+}
+
+.pepsi {
+    max-width: 70%;
+    margin-left: 2rem;
+}
+
+
+    /*SUCURSALES*/
+
+.sucursales {
+    color: #f1ecec;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 90%;
+    text-indent: 20px;
+}
+
+.sucursales__lista {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 95%; 
+    color: #5f9ea0;
+    text-decoration: double underline;
+}
+
+
+    /*PEDIDOS ONLINE*/
+
+.row {
+    justify-content: center;
+}
+
+
+    /*FOOTER*/
+
+.footericon {
+    width: 1.5rem;
+    margin-inline: 0.5rem;
+}
+
+.copyright {
+    font-family: 'Moon Dance', cursive;
+    color: #f1ecec;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.d-block {
+    margin-left: 3rem;
+}
 }
