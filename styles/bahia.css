@@ -1,416 +1,330 @@
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Moon+Dance&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Moon+Dance&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {background: url(../assets/img/32127-marrones.jpg);
-    position: relative;
-    padding-bottom: 4rem;
-    min-height: 100vh;
+body {
+  background: url(../assets/img/32127-marrones.jpg);
+  position: relative;
+  padding-bottom: 4rem;
+  min-height: 100vh;
 }
-
 
 /*BARRA DE NAVEGACION*/
-
 header {
-    background-color: #0000007d;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+}
+header h1 a {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #f1ecec;
+  text-decoration: none;
+  margin-left: 1.25rem;
+}
+header nav {
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.0352941176);
+}
+header nav ul li {
+  margin-inline: 0.6rem;
+  font-size: 1.5rem;
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #f1ecec;
+  font-family: "Moon Dance", cursive;
+  font-size: 2rem;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #5f9ea0;
 }
 
-.bar a {
-    font-family: 'East Sea Dokdo', cursive;
-    font-size: 5rem;   
-    font-weight: 300;
-    color: #f1ecec;
-    text-decoration: none;
-    margin-left: 1.25rem;
-}
-
-nav {
-    text-align: right;
-    background-color: #00000009;
-}
-
-.menu li {
-    margin-inline: 0.6rem;
-    font-size: 1.5rem;
-    display: inline;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #f1ecec;
-    font-family: 'Moon Dance', cursive;
-    font-size: 2rem;
-}
-
-.menu li a:hover {
-    text-decoration: underline;
-}
-
-
- /* TARJETAS */
- 
-.tarjetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tarjetasindex1 {
-    margin-right: 30rem;
-    text-align: center;
-}
-
-.tarjetasindex2 {
-    margin-left: 30rem;
-    text-align: center;
-}
-
+/* TARJETAS */
 .card {
-    text-align: center;
+  text-align: center;
 }
-
 
 /*UBICACION*/
-
 .mapa {
-    color: #f1ecec;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem;
+  color: #f1ecec;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
 }
-
 
 /*REDES SOCIALES*/
-
 .footerindex {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #0000007d;
-    padding: 0.5rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
-.footericon {
-    flex-direction: row;
-    width: 3rem;
-    margin-inline: 2rem;
-    
+.footerindex .footericon {
+  flex-direction: row;
+  width: 3rem;
+  margin-inline: 2rem;
 }
-
-.copyright {
-    font-family: 'Moon Dance', cursive;
-    color: #f1ecec;
-    font-size: 2rem;
-    margin-left: 2rem;
+.footerindex .copyright {
+  font-family: "Moon Dance", cursive;
+  color: #f1ecec;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
-
 
 /*CARTA*/
-
 main {
-    color: #f1ecec;
-    margin: 1rem;
+  color: #f1ecec;
+  margin: 1rem;
 }
-
-.pagecarta {
-    font-family: 'Moon Dance', cursive;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+main .pagecarta {
+  font-family: "Moon Dance", cursive;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
-
-.grid-carta {
-    border: 5px solid #906603;
-    border-radius: 1rem;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
+main .grid-carta {
+  border: 5px solid #906603;
+  border-radius: 1rem;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
 }
-
-.grid-cafeteria {
-    grid-template-rows: repeat(19, 1fr);
+main .grid-cafeteria {
+  grid-template-rows: repeat(19, 1fr);
 }
-
-.grid-cocina {
-    grid-template-rows: repeat(5, 1fr);
+main .grid-cocina {
+  grid-template-rows: repeat(5, 1fr);
 }
-
-.grid-bebidas {
-    grid-template-rows: repeat(8, 1fr);
+main .grid-bebidas {
+  grid-template-rows: repeat(8, 1fr);
 }
-
-.cartacontacto {
-    margin-top: 4rem;
-    color: #5f9ea0;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
+main .cartacontacto {
+  margin-top: 4rem;
+  color: #5f9ea0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
-
-.linklink {
-    color: aqua;
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
+main .linklink {
+  color: aqua;
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-
 
 /*PROVEEDORES*/
-
-.provee {
-    color: #c9b6b6;
-    margin: 1rem;
-    padding: 1rem;
-    font-family: 'Moon Dance', cursive;
-    font-size: 3rem;
-    text-align: center;
+main .provee {
+  color: #c9b6b6;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Moon Dance", cursive;
+  font-size: 3rem;
+  text-align: center;
 }
-
-.bimbo {
-    max-width: 70%;
-    margin-left: 11rem;
+main .bimbo {
+  max-width: 70%;
+  margin-left: 11rem;
 }
-
-.coca {
-    max-width: 60%;
-    margin-left: 15rem;
+main .coca {
+  max-width: 60%;
+  margin-left: 15rem;
 }
-
-.hileret {
-    width: 20rem;
-    margin: 2rem 0 1rem 29rem;
+main .hileret {
+  width: 20rem;
+  margin: 2rem 0 1rem 29rem;
 }
-.serenisima {
-    max-width: 80%;
-    margin-left: 7rem;
+main .serenisima {
+  max-width: 80%;
+  margin-left: 7rem;
 }
-
-.virginia {
-    width: 50rem;
-    margin-left: 13rem;
+main .virginia {
+  width: 50rem;
+  margin-left: 13rem;
 }
-
-.lario {
-    width: 20rem;
-    margin-left: 28rem;
+main .lario {
+  width: 20rem;
+  margin-left: 28rem;
 }
-
-.palau {
-    width: 20rem;
-    margin-left: 28rem;
+main .palau {
+  width: 20rem;
+  margin-left: 28rem;
 }
-
-.pepsi {
-    max-width: 40%;
-    margin-left: 22rem;
+main .pepsi {
+  max-width: 40%;
+  margin-left: 22rem;
 }
-
 
 /*SUCURSALES*/
-
-.sucursales {
-    color: #f1ecec;
-    font-weight: bold;
-    font-size: 2rem;
-    width: 70rem;
-    margin: 2rem;
-    padding: 2rem;
-    text-indent: 20px;
+main .sucursales {
+  color: #f1ecec;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 70rem;
+  margin: 2rem;
+  padding: 2rem;
+  text-indent: 20px;
 }
-
-.sucursales__lista {
-    font-size: 3rem;
-    margin-top: 7rem;
-    color: #5f9ea0;
-    text-align: left;
-    text-decoration: double underline;
+main .sucursales__lista {
+  font-size: 3rem;
+  margin-top: 7rem;
+  color: #5f9ea0;
+  text-align: left;
+  text-decoration: double underline;
 }
-
 
 /*PEDIDOS ONLINE*/
-
 .textoenvio {
-    color: #f1ecec;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 2rem;
+  color: #f1ecec;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
-
 
 /*OFERTA LABORAL*/
-
-.quienesintro {
-    font-size: 3rem;
-    font-style: italic;
-    color: #c9b6b6;
-    text-align: center;
+main .quienesintro {
+  font-size: 3rem;
+  font-style: italic;
+  color: #c9b6b6;
+  text-align: center;
 }
-
-.quienesintro2 {
-    font-size: 2rem;
-    margin-top: 5rem;
-    text-decoration: underline;
+main .quienesintro2 {
+  font-size: 2rem;
+  margin-top: 5rem;
+  text-decoration: underline;
 }
-
-.quien {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    text-align: justify;
+main .quien {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: justify;
 }
-
-.quienescontacto {
-    font-size: 2rem;
-    margin-top: 7rem;
-    border: 1rem solid #5f9ea0;
-    padding: 0.5rem;
+main .quienescontacto {
+  font-size: 2rem;
+  margin-top: 7rem;
+  border: 1rem solid #5f9ea0;
+  padding: 0.5rem;
 }
-
 
 /*EL ORIGEN*/
-
-.origen {
-    display: flex;
-    font-size: 1.5rem;
-    width: 70rem;
-    text-indent: 20px;
-    align-items: center;
+main .origen {
+  display: flex;
+  font-size: 1.5rem;
+  width: 70rem;
+  text-indent: 20px;
+  align-items: center;
 }
-
-.origenimg {
-    max-width: 300px;
-    margin-left: 2rem;
+main .origen .origenimg {
+  max-width: 300px;
+  margin-left: 2rem;
 }
-
-.origen2 {
-    display: flex;
-    font-size: 1.5rem;
-    width: 70rem;
-    margin-top: 2rem;
-    text-indent: 20px;
-    align-items: center;
+main .origen2 {
+  display: flex;
+  font-size: 1.5rem;
+  width: 70rem;
+  margin-top: 2rem;
+  text-indent: 20px;
+  align-items: center;
 }
-
-.origenimg2 {
-    max-width: 300px;
-    margin-right: 1rem;
-    padding: 1rem;
+main .origen2 .origenimg2 {
+  max-width: 300px;
+  margin-right: 1rem;
+  padding: 1rem;
 }
-
-.origen3 {
-    display: flex;
-    font-size: 1.5rem;
-    width: 70rem;
-    text-indent: 20px;
-    align-items: center;
+main .origen3 {
+  display: flex;
+  font-size: 1.5rem;
+  width: 70rem;
+  text-indent: 20px;
+  align-items: center;
 }
-
-.origenimg3 {
-    max-width: 300px;
+main .origen3 .origenimg3 {
+  max-width: 300px;
 }
-
-.origen4 {
-    display: flex;
-    font-size: 1.5rem;
-    width: 70rem;
-    margin-top: 2rem;
-    text-indent: 20px;
-    align-items: center;
+main .origen4 {
+  display: flex;
+  font-size: 1.5rem;
+  width: 70rem;
+  margin-top: 2rem;
+  text-indent: 20px;
+  align-items: center;
 }
-
-.origenimg4 {
-    max-width: 300px;
-    padding: 2rem;
+main .origen4 .origenimg4 {
+  max-width: 300px;
+  padding: 2rem;
 }
-
-.origen5 {
-    font-size: 3rem;
-    font-style: italic;
-    text-indent: 40px;
+main .origen5 {
+  font-size: 3rem;
+  font-style: italic;
+  text-indent: 40px;
 }
-
-.origenimg5 {
-    max-width: 500px;
-    margin-left: 20rem;
+main .origen5 .origenimg5 {
+  max-width: 500px;
+  margin-left: 20rem;
 }
-
 
 /*Mediaqueries*/
-
 @media screen and (max-width: 768px) {
-
-
-    /*HEADER*/
-
-.bar {
+  /*HEADER*/
+  .bar {
     text-align: center;
-}
-
-.menu {
+  }
+  .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 2.1rem;
-}
-
-
-    /*PROVEEDORES*/
-
-.bimbo {
+  }
+  /*PROVEEDORES*/
+  .bimbo {
     max-width: 70%;
     margin-left: 3rem;
-}
-
-.coca {
+  }
+  .coca {
     max-width: 60%;
     margin-left: 4rem;
     padding-top: 1rem;
-}
-
-.hileret {
+  }
+  .hileret {
     width: 20rem;
     margin: 2rem 0 1rem 1rem;
-}
-.serenisima {
+  }
+  .serenisima {
     max-width: 80%;
     margin-left: 2rem;
     padding-bottom: 1rem;
-}
-
-.virginia {
+  }
+  .virginia {
     width: 20rem;
     margin-left: 1rem;
-}
-
-.lario {
+  }
+  .lario {
     width: 20rem;
     margin-left: 1rem;
     padding-top: 1rem;
-}
-
-.palau {
+  }
+  .palau {
     width: 15rem;
     margin-left: 3rem;
-}
-
-.pepsi {
+  }
+  .pepsi {
     max-width: 70%;
     margin-left: 2rem;
-}
-
-
-    /*SUCURSALES*/
-
-.sucursales {
+  }
+  /*SUCURSALES*/
+  .sucursales {
     color: #f1ecec;
     font-weight: bold;
     display: flex;
@@ -419,39 +333,32 @@ main {
     font-size: 1.2rem;
     width: 90%;
     text-indent: 20px;
-}
-
-.sucursales__lista {
+  }
+  .sucursales__lista {
     font-size: 1.5rem;
     margin-top: 2rem;
-    width: 95%; 
+    width: 95%;
     color: #5f9ea0;
     text-decoration: double underline;
-}
-
-
-    /*PEDIDOS ONLINE*/
-
-.row {
+  }
+  /*PEDIDOS ONLINE*/
+  .row {
     justify-content: center;
-}
-
-
-    /*FOOTER*/
-
-.footericon {
+  }
+  /*FOOTER*/
+  .footericon {
     width: 1.5rem;
     margin-inline: 0.5rem;
-}
-
-.copyright {
-    font-family: 'Moon Dance', cursive;
+  }
+  .copyright {
+    font-family: "Moon Dance", cursive;
     color: #f1ecec;
     font-size: 1rem;
     margin-left: 1rem;
+  }
+  .d-block {
+    margin-left: 3rem;
+  }
 }
 
-.d-block {
-    margin-left: 3rem;
-}
-}
+/*# sourceMappingURL=bahia.css.map */
