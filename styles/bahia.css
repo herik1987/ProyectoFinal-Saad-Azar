@@ -286,38 +286,38 @@ main .origen5 .origenimg5 {
     margin-right: 5rem;
   }
   /*PROVEEDORES*/
-  .bimbo {
+  .provmain .bimbo {
     max-width: 70%;
     margin-left: 3rem;
   }
-  .coca {
+  .provmain .coca {
     max-width: 60%;
     margin-left: 4rem;
     padding-top: 1rem;
   }
-  .hileret {
+  .provmain .hileret {
     width: 20rem;
     margin: 2rem 0 1rem 1rem;
   }
-  .serenisima {
+  .provmain .serenisima {
     max-width: 80%;
     margin-left: 2rem;
     padding-bottom: 1rem;
   }
-  .virginia {
+  .provmain .virginia {
     width: 20rem;
     margin-left: 1rem;
   }
-  .lario {
+  .provmain .lario {
     width: 20rem;
     margin-left: 1rem;
     padding-top: 1rem;
   }
-  .palau {
+  .provmain .palau {
     width: 15rem;
     margin-left: 3rem;
   }
-  .pepsi {
+  .provmain .pepsi {
     max-width: 70%;
     margin-left: 2rem;
   }

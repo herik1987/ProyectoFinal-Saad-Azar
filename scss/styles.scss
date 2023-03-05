@@ -324,47 +324,49 @@ main {
 
 
 /*PROVEEDORES*/
-    .bimbo {
-        max-width: 70%;
-        margin-left: 3rem;
-    }
+    .provmain {
+        .bimbo {
+            max-width: 70%;
+            margin-left: 3rem;
+        }
 
-    .coca {
-        max-width: 60%;
-        margin-left: 4rem;
-        padding-top: 1rem;
-    }
+        .coca {
+            max-width: 60%;
+            margin-left: 4rem;
+            padding-top: 1rem;
+        }
 
-    .hileret {
-        width: 20rem;
-        margin: 2rem 0 1rem 1rem;
-    }
+        .hileret {
+            width: 20rem;
+            margin: 2rem 0 1rem 1rem;
+        }
 
-    .serenisima {
-        max-width: 80%;
-        margin-left: 2rem;
-        padding-bottom: 1rem;
-    }
+        .serenisima {
+            max-width: 80%;
+            margin-left: 2rem;
+            padding-bottom: 1rem;
+        }
 
-    .virginia {
-        width: 20rem;
-        margin-left: 1rem;
-    }
+        .virginia {
+            width: 20rem;
+            margin-left: 1rem;
+        }
 
-    .lario {
-        width: 20rem;
-        margin-left: 1rem;
-        padding-top: 1rem;
-    }
+        .lario {
+            width: 20rem;
+            margin-left: 1rem;
+            padding-top: 1rem;
+        }
 
-    .palau {
-        width: 15rem;
-        margin-left: 3rem;
-    }
+        .palau {
+            width: 15rem;
+            margin-left: 3rem;
+        }
 
-    .pepsi {
-        max-width: 70%;
-        margin-left: 2rem;
+        .pepsi {
+            max-width: 70%;
+            margin-left: 2rem;
+        }
     }
 
 
