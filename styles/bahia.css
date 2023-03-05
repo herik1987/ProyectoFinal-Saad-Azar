@@ -278,14 +278,12 @@ main .origen5 .origenimg5 {
 /*Mediaqueries*/
 @media screen and (max-width: 768px) {
   /*HEADER*/
-  .bar {
+  Header .bar {
     text-align: center;
   }
-  .menu {
-    display: flex;
+  Header .menu {
     align-items: center;
-    justify-content: center;
-    margin-right: 2.1rem;
+    margin-right: 5rem;
   }
   /*PROVEEDORES*/
   .bimbo {
@@ -345,18 +343,46 @@ main .origen5 .origenimg5 {
   .row {
     justify-content: center;
   }
+  /*ORIGENES*/
+  .origen {
+    flex-direction: column;
+    max-width: 22rem;
+  }
+  .origen .origenimg {
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .origen2 {
+    flex-direction: column;
+    max-width: 22rem;
+  }
+  .origen3 {
+    flex-direction: column;
+    max-width: 22rem;
+  }
+  .origen3 .origenimg3 {
+    margin-top: 1rem;
+  }
+  .origen4 {
+    flex-direction: column;
+    max-width: 22rem;
+  }
+  .origenimg5 {
+    max-width: 300px;
+    margin: 0px;
+  }
   /*FOOTER*/
-  .footericon {
+  .footerindex .footericon {
     width: 1.5rem;
     margin-inline: 0.5rem;
   }
-  .copyright {
+  .footerindex .copyright {
     font-family: "Moon Dance", cursive;
     color: #f1ecec;
     font-size: 1rem;
     margin-left: 1rem;
   }
-  .d-block {
+  .footerindex .d-block {
     margin-left: 3rem;
   }
 }

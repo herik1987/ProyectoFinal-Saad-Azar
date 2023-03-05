@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2-saad-azar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herik1987/PreEntrega2-Saad-Azar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herik1987/PreEntrega2-Saad-Azar/issues"
+  },
+  "homepage": "https://github.com/herik1987/PreEntrega2-Saad-Azar#readme"
+}
