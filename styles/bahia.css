@@ -51,6 +51,16 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.boton {
+  width: 75px;
+  transition: width 3s;
+}
+
+.boton:hover {
+  width: 150px;
+  transform: skewX(-20deg);
+}
+
 /*UBICACION*/
 .mapa {
   color: #f1ecec;
@@ -98,7 +108,7 @@ main .pagecarta {
   margin-bottom: 1rem;
 }
 main .grid-carta {
-  border: 5px solid #f1ecec;
+  border: 5px solid #906603;
   border-radius: 1rem;
   padding: 10px;
   display: grid;
@@ -126,6 +136,9 @@ main .linklink {
   font-size: 3rem;
   justify-content: center;
   margin-bottom: 2rem;
+}
+main .linklink:hover {
+  transform: skewX(-20deg);
 }
 
 /*PROVEEDORES*/

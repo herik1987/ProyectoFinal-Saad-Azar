@@ -84,6 +84,16 @@ header {
     text-align: center;
 }
 
+.boton {
+    width: 75px;
+    transition: width 3s;
+}
+
+.boton:hover {
+    width: 150px;
+    transform: skewX(-20deg);
+}
+
 
 /*UBICACION*/
 
@@ -135,7 +145,7 @@ main {
         margin-bottom: 1rem;
     }
     .grid-carta {
-        border: 5px solid map-get($colores , "blanco" );
+        border: 5px solid map-get($colores , "marron" );
         border-radius: 1rem;
         padding: 10px;
         display: grid;
@@ -163,6 +173,9 @@ main {
         font-size: 3rem;
         justify-content: center;
         margin-bottom: 2rem;
+    }
+    .linklink:hover {
+        transform: skewX(-20deg);
     }
 }
 
