@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Moon+Dance&display=swap');
+
+/*VARIABLES Y MIXINS*/
+
+$colorlink: aqua;
+$anchoimg: 20rem;
+
+$colores: (
+    "negro": #0000007d,
+    "blanco": #f1ecec,
+    "turquesa": #5f9ea0,
+    "marron": #906603,
+);
+
+@mixin fuente () {
+    font-family: 'Moon Dance', cursive;
+    font-size: 2rem;
+}
+
+@mixin fuenteorigen ($margintop, $marginleft, $padding) {
+    margin-top: $margintop;
+    margin-left: $marginleft;
+    padding: $padding;
+    display: flex;
+    font-size: 1.5rem;
+    width: 70rem;
+    text-indent: 20px;
+    align-items: center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,20 +45,20 @@ body {background: url(../assets/img/32127-marrones.jpg);
 /*BARRA DE NAVEGACION*/
 
 header {
-    background-color: #0000007d;
+    background-color: map-get($colores , "negro" );
     h1 {
         a {
             font-family: 'East Sea Dokdo', cursive;
             font-size: 5rem;   
             font-weight: 300;
-            color: #f1ecec;
+            color: map-get($colores , "blanco" );
             text-decoration: none;
             margin-left: 1.25rem;
         }
     }
     nav {
         text-align: right;
-        background-color: #00000009;
+        background-color: map-get($colores , "negro" );
         ul {
             li {
                 margin-inline: 0.6rem;
@@ -37,12 +66,11 @@ header {
                 display: inline;
                 a {
                     text-decoration: none;
-                    color: #f1ecec;
-                    font-family: 'Moon Dance', cursive;
-                    font-size: 2rem;
+                    color: map-get($colores , "blanco" );
+                    @include fuente();
                     &:hover {
                         text-decoration: underline;
-                        color: #5f9ea0;
+                        color: map-get($colores , "turquesa" );
                     } 
                 }
             }
@@ -60,7 +88,7 @@ header {
 /*UBICACION*/
 
 .mapa {
-    color: #f1ecec;
+    color: map-get($colores , "blanco" );
     font-size: 3rem;
     display: flex;
     flex-direction: column;
@@ -74,7 +102,7 @@ header {
 .footerindex {
     display: flex;
     flex-wrap: nowrap;
-    background-color: #0000007d;
+    background-color: map-get($colores , "negro" );
     padding: 0.5rem;
     position: absolute;
     bottom: 0;
@@ -87,9 +115,8 @@ header {
         margin-inline: 2rem;
     }
     .copyright{
-        font-family: 'Moon Dance', cursive;
-        color: #f1ecec;
-        font-size: 2rem;
+        @include fuente();
+        color: map-get($colores , "blanco" );
         margin-left: 2rem;
     }
 }
@@ -99,16 +126,16 @@ header {
 /*CARTA*/
 
 main {
-    color: #f1ecec;
+    color: map-get($colores , "blanco" );
     margin: 1rem;
     .pagecarta {
-        font-family: 'Moon Dance', cursive;
+        @include fuente();
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
     .grid-carta {
-        border: 5px solid #906603;
+        border: 5px solid map-get($colores , "blanco" );
         border-radius: 1rem;
         padding: 10px;
         display: grid;
@@ -125,13 +152,13 @@ main {
     }
     .cartacontacto {
         margin-top: 4rem;
-        color: #5f9ea0;
+        color: map-get($colores , "turquesa" );
         font-size: 2rem;
         display: flex;
         justify-content: center;
     }
     .linklink {
-        color: aqua;
+        color: $colorlink;
         display: flex;
         font-size: 3rem;
         justify-content: center;
@@ -143,11 +170,10 @@ main {
 
 main {
     .provee {
-        color: #c9b6b6;
+        color: map-get($colores , "blanco" );
         margin: 1rem;
         padding: 1rem;
-        font-family: 'Moon Dance', cursive;
-        font-size: 3rem;
+        @include fuente();
         text-align: center;
     }
     .bimbo {
@@ -159,7 +185,7 @@ main {
         margin-left: 15rem;
     }
     .hileret {
-        width: 20rem;
+        width: $anchoimg;
         margin: 2rem 0 1rem 29rem;
     }
     .serenisima {
@@ -171,11 +197,11 @@ main {
         margin-left: 13rem;
     }
     .lario {
-        width: 20rem;
+        width: $anchoimg;
         margin-left: 28rem;
     }
     .palau {
-        width: 20rem;
+        width: $anchoimg;
         margin-left: 28rem;
     }
     .pepsi {
@@ -188,7 +214,7 @@ main {
 
 main {
     .sucursales {
-        color: #f1ecec;
+        color: map-get($colores , "blanco" );
         font-weight: bold;
         font-size: 2rem;
         width: 70rem;
@@ -199,7 +225,7 @@ main {
     .sucursales__lista {
         font-size: 3rem;
         margin-top: 7rem;
-        color: #5f9ea0;
+        color: map-get($colores , "turquesa" );
         text-align: left;
         text-decoration: double underline;
     }
@@ -209,7 +235,7 @@ main {
 /*PEDIDOS ONLINE*/
 
 .textoenvio {
-    color: #f1ecec;
+    color: map-get($colores , "blanco" );
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -222,7 +248,7 @@ main {
     .quienesintro {
         font-size: 3rem;
         font-style: italic;
-        color: #c9b6b6;
+        color: map-get($colores , "blanco" );
         text-align: center;
     }
     .quienesintro2 {
@@ -238,7 +264,7 @@ main {
     .quienescontacto {
         font-size: 2rem;
         margin-top: 7rem;
-        border: 1rem solid #5f9ea0;
+        border: 1rem solid map-get($colores , "turquesa" );
         padding: 0.5rem;
     }
 }
@@ -248,23 +274,14 @@ main {
 
 main {
     .origen {
-        display: flex;
-        font-size: 1.5rem;
-        width: 70rem;
-        text-indent: 20px;
-        align-items: center;
+        @include fuenteorigen(0, 0, 0);
             .origenimg {
                 max-width: 300px;
                 margin-left: 2rem;
             }
     }
     .origen2 {
-        display: flex;
-        font-size: 1.5rem;
-        width: 70rem;
-        margin-top: 2rem;
-        text-indent: 20px;
-        align-items: center;
+        @include fuenteorigen(2, 0, 0);
             .origenimg2 {
                 max-width: 300px;
                 margin-right: 1rem;
@@ -272,22 +289,13 @@ main {
             }
     }
     .origen3 {
-        display: flex;
-        font-size: 1.5rem;
-        width: 70rem;
-        text-indent: 20px;
-        align-items: center;
+        @include fuenteorigen(0, 0, 0);
             .origenimg3 {
                 max-width: 300px;
             }
     }
     .origen4 {
-        display: flex;
-        font-size: 1.5rem;
-        width: 70rem;
-        margin-top: 2rem;
-        text-indent: 20px;
-        align-items: center;
+        @include fuenteorigen(2, 0, 0);
             .origenimg4 {
                 max-width: 300px;
                 padding: 2rem;
@@ -297,10 +305,6 @@ main {
         font-size: 3rem;
         font-style: italic;
         text-indent: 40px;
-            .origenimg5 {
-                max-width: 500px;
-                margin-left: 20rem;
-            }
     }
 }
 
@@ -337,7 +341,7 @@ main {
         }
 
         .hileret {
-            width: 20rem;
+            width: $anchoimg;
             margin: 2rem 0 1rem 1rem;
         }
 
@@ -348,12 +352,12 @@ main {
         }
 
         .virginia {
-            width: 20rem;
+            width: $anchoimg;
             margin-left: 1rem;
         }
 
         .lario {
-            width: 20rem;
+            width: $anchoimg;
             margin-left: 1rem;
             padding-top: 1rem;
         }
@@ -372,7 +376,7 @@ main {
 
 /*SUCURSALES*/
     .sucursales {
-        color: #f1ecec;
+        color: map-get($colores , "blanco" );
         font-weight: bold;
         display: flex;
         flex-direction: column;
@@ -386,7 +390,7 @@ main {
         font-size: 1.5rem;
         margin-top: 2rem;
         width: 95%; 
-        color: #5f9ea0;
+        color: map-get($colores , "turquesa" );
         text-decoration: double underline;
     }
 
@@ -437,7 +441,7 @@ main {
 
         .copyright {
             font-family: 'Moon Dance', cursive;
-            color: #f1ecec;
+            color: map-get($colores , "blanco" );
             font-size: 1rem;
             margin-left: 1rem;
         }
