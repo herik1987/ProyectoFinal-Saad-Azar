@@ -113,7 +113,6 @@ function comprar() {
   cancelarCompraBtn.addEventListener('click', cancelarCompra);
 }
 
-
 // CONFIRMAR COMPRA
 function confirmarCompra() {
   const totalCompra = total.textContent.substring(7); // Obtener el total de la compra
@@ -134,14 +133,14 @@ function confirmarCompra() {
     productos: carrito
     };
 
-// Enviar la información al servidor mediante AJAX
+// ENVIAR LA INFORMACION DE LA COMPRA AL SERVIDOR
   const xhr = new XMLHttpRequest();
     xhr.open('POST', 'url_a_agregar'); 
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
-// Cuenta regresiva de 1 segundo
+// CUENTA REGRESIVA
           const countdownElement = document.getElementById('countdown');
           let countdown = 1;
 
